@@ -1,13 +1,59 @@
 #  Implementing German-to-English Neural Machine Translation using Transformer
 
+# German-to-English Neural Machine Translation using Transformer
+
 ## Overview
 
-In this assignment, you will implement the landmark architecture from the paper "Attention Is All You Need" from scratch using PyTorch. The goal is to develop a Neural Machine Translation (NMT) system capable of translating text from German to English using the Multi30k dataset.
+This project implements a **Transformer-based Neural Machine Translation (NMT)** system for translating German sentences into English.
 
+The model is implemented using **PyTorch** and trained on the **Multi30k** dataset. The project focuses on implementing the core Transformer architecture and evaluating its translation performance.
+
+## Problem Statement
+
+Machine Translation is the task of automatically converting text from one language into another.
+
+The objective of this project is to translate German sentences into meaningful English sentences using a **Transformer Encoder-Decoder architecture**.
+
+## Dataset
+
+The project uses the **Multi30k German-English parallel dataset**.
+
+Each sample contains:
+
+- German sentence as the source language
+- English sentence as the target language
+
+The dataset is loaded using the Hugging Face `datasets` library.
+
+## Model Architecture
+
+```text
+German Sentence
+       |
+       v
+   Tokenization
+       |
+       v
+ Token Embeddings
+       |
+       v
+ Positional Encoding
+       |
+       v
+ Transformer Encoder
+       |
+       v
+ Transformer Decoder
+       |
+       v
+ Linear + Softmax
+       |
+       v
+English Translation
 ## Project Structure
 
 ```text
-assignment3/
+
 ├── requirements.txt
 ├── README.md
 ├── model.py           # Core Transformer architecture (Encoders, Decoders, Multi-Head Attention)
