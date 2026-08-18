@@ -1,4 +1,4 @@
-# DA6401 - Assignment 3: Implementing the Transformer for Machine Translation
+#  Implementing German-to-English Neural Machine Translation using Transformer
 
 ## Overview
 
