@@ -1,6 +1,6 @@
 #  Implementing German-to-English Neural Machine Translation using Transformer
 
-# German-to-English Neural Machine Translation using Transformer
+
 
 ## Overview
 
